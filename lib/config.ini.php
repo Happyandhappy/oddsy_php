@@ -16,8 +16,8 @@
 	* the database configuration settings. 
 	*/
 	 define('DB_SERVER', 'localhost'); 
-	 define('DB_USER', 'fzsgjlbk_user'); 
-	 define('DB_PASS', 'EYHh$9KQ)DFZ'); 
+	 define('DB_USER', 'root'); 
+	 define('DB_PASS', ''); 
 	 define('DB_DATABASE', 'fzsgjlbk_oddsy');
 	 define('DB_DRIVER', 'mysql');
  
