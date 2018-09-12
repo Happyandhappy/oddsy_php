@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    <title>Material Elements | Remark Admin Template</title>
+    <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./global/css/bootstrap.css">
+    <link rel="stylesheet" href="./global/css/bootstrap-extend.css">
+    <link rel="stylesheet" href="./assets/css/site.min.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="./global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="./global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="./global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="./global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="./global/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="./global/vendor/flag-icon-css/flag-icon.css">
+    <link rel="stylesheet" href="./global/vendor/waves/waves.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./global/fonts/material-design/material-design.min.css">
+    <link rel="stylesheet" href="./global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    <link rel="stylesheet" href="./angular/rzslider.css">
+    <link rel="stylesheet" href="./angular/highlight.css" />
+    <link rel="stylesheet" href="./angular/demo.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+    <style>
+        .triangle-right {
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-left: 20px solid #555;
+            border-bottom: 20px solid transparent;
+            display: inline-block;
+        }
+    </style>
+
+    <!--[if lt IE 9]>
+    <script src="./global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <script src="./global/vendor/media-match/media.match.min.js"></script>
+    <script src="./global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    <!-- Scripts -->
+    <script src="./global/vendor/modernizr/modernizr.js"></script>
+    <script src="./global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+        Breakpoints();
+    </script>
+
+
+
+    <script src="./angular/angular.min.js"></script>
+
+    <!--<script src="./angular/reslider.js"></script>-->
+
+    <script src="./angular/angular-santitize.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.js"></script>
+    <script src="./angular/hight.min.js"></script>
+    <script src="./angular/angular-highlight.min.js"></script>
+    <script src="https://rawgit.com/rzajac/angularjs-slider/master/dist/rzslider.js"></script>
+
+
+
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl" class="padding-top-35">
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div style="width: 760px; margin: auto">
+            <div class="panel margin-bottom-10" style="background: #E9ECEF">
+                <div class="panel-heading">
+                    <h3 class="panel-title padding-bottom-0">Select bet type</h3>
+                </div>
+                <div class="panel-body padding-bottom-0">
+                            <div>
+                                <div class="radio-custom radio-success">
+                                    <input type="radio" id="inputAwesome" ng-model="select_bet" ng-change="RadioChange('qualify')" value="qualify" required="" ng-checked="true">
+                                    <label for="inputAwesome" style="font-weight: bold;">Qualifying Bet</label> - Use when placing back and lay bets to qualify for a free bet.
+                                </div>
+                            </div>
+                            <div>
+                                <div class="radio-custom radio-success">
+                                    <input type="radio" id="inputVeryAwesome" ng-model="select_bet" ng-change="RadioChange('free')" value="free">
+                                    <label for="inputVeryAwesome" style="font-weight: bold">Free Bet</label> - Use when extracting profit from a free bet or bonus.
+                                </div>
+                            </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="panel" style="margin-bottom: 55px;">
+                <div class=" padding-top-15 padding-bottom-15" style="min-height: 100px; background: #4FC3F7; border-top-right-radius: 4px; border-top-left-radius: 4px">
+                    <div class="padding-right-15 padding-left-15">
+                        <h3 class="white margin-0 inline-block" style="font-family: Arial, Baskerville, monospace; font-weight: 700">Back Bet (Sportsbook)</h3>
+                        <button type="button" class="btn btn-primary  btn-round btn-xs width-150 margin-0 pull-right hide"><i class="icon md-menu" aria-hidden="true"></i>Round</button>
+
+                    </div>
+
+                    <div class="panel-body container-fluid padding-0 padding-left-15">
+                        <form autocomplete="off">
+
+                            <div class="col-md-4 padding-left-0 padding-top-25">
+                                <div class="checkbox-custom checkbox-default" ng-if="radio_change == 'free'">
+                                    <input type="checkbox" id="inputChecked" ng-click="IsReturnedCheckBox()"/>
+                                    <label for="inputChecked">Stake returned</label>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+
+                    <div class="panel-body container-fluid padding-0 padding-left-15">
+
+                       
+
+
+
+                        <form autocomplete="off">
+                            <div class="form-group form-material floating col-md-6 padding-left-0" style="padding-right: 30px">
+                                <input ng-model="back_odds" type="text" class="form-control input-lg white" name="inputFloatingLarge" ng-change="count_lay_stake()" style="font-size: 17pt"/>
+                                <label class="floating-label black">Back odds (decimal)</label>
+                            </div>
+
+                        </form>
+                        
+                        
+                        
+                        
+                         <form autocomplete="off">
+
+                            <div class="example-wrap  form-material floating col-md-6 padding-left-0" style="padding-right: 30px">
+                                <input ng-model="back_stake" type="text" class="form-control input-lg white" name="inputFloatingLarge" ng-change="count_lay_stake()" style="font-size: 17pt"/>
+                                <label class="floating-label black">Back stake</label>
+                            </div>
+
+                        </form>
+
+
+
+                        <form autocomplete="off" class="hide">
+                            <div class="form-group form-material floating col-md-6 padding-left-0">
+                                <input type="text" ng-model="back_commission" value="0" class="form-control input-lg white" name="inputFloatingLarge" ng-change="count_lay_stake()" style="font-size: 17pt"/>
+                                <label class="floating-label black">Back commission (%)</label>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+
+                <div class=" padding-top-15 padding-bottom-15 padding-left" style="height: 150px; background: #F7AEC6">
+                    <h3 class="white margin-0 inline-block padding-left-15" style="font-family: Arial, Baskerville, monospace; font-weight: 700">Lay Bet (Betting Exchange)</h3>
+                    <div class="panel-body container-fluid padding-0 padding-left-15">
+                        <form autocomplete="off">
+                            <div class="form-group form-material floating col-md-6 padding-left-0" style="padding-right: 30px">
+
+                                <input type="text" ng-model="lay_odds" class="form-control input-lg white" name="inputFloatingLarge" ng-change="count_lay_stake()" style="font-size: 17pt"/>
+                                <label class="floating-label black">Lay odds (decimal)</label>
+                            </div>
+
+                        </form>
+
+
+                        <form autocomplete="off">
+                            <div class="form-group form-material floating col-md-6 padding-left-0">
+                                <input type="text" ng-model="lay_commission" class="form-control input-lg white" name="inputFloatingLarge" ng-change="count_lay_stake()" style="font-size: 17pt"/>
+                                <label class="floating-label black">Lay commission (%)</label>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="example-tooltip col-md-12 padding-0" style="margin-top: -10px">
+                    <div class="tooltip bottom margin-right-0">
+                        <div class="tooltip-arrow"></div>
+                        <div class="tooltip-inner font-size-20" style="max-width: 100%">
+                            Lay stake required: £{{lay_stake}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div  style="background: #E9ECEF; height: 40px; border-top-left-radius: 4px; border-top-right-radius: 4px">
+                <div style="width: 300px; height: 100%; display: inline-block"></div>
+                <div style="width: 380px; height: 100%; display: inline-block; background: transparent" class="pull-right">
+                    <div style="display: inline-block; width: 130px" align="center"><h4>Bookie</h4></div>
+                    <div style="display: inline-block; width: 130px" align="center"><h4>Exchange</h4></div>
+                    <div style="display: inline-block; width: 100px" align="center"><h4>Total</h4></div>
+
+
+                </div>
+
+            </div>
+
+
+            <div style="background: #ffffff; height: 40px">
+                <div style="width: 300px; height: 100%; background-image: url('./img/blue.png'); display: inline-block; padding-right: 30px">
+                    <h4 class="text-right white">If back (bookie) bet wins</h4>
+                </div>
+
+
+
+                <div style="width: 380px; height: 100%; display: inline-block; background: transparent" class="pull-right">
+                    <div style="display: inline-block; width: 130px" align="center"><h4 ng-if="back_bookie > 0" style="color:#28A745">+ £{{back_bookie}}</h4><h4 ng-if="back_bookie < 0" style="color:red">- £{{tofix2(back_bookie * (-1))}}</h4><h4 ng-if="back_bookie == 0" style="color:black">£0.00</h4></div>
+                    <div style="display: inline-block; width: 130px" align="center"><h4 ng-if="back_exchange > 0" style="color:#28A745">+ £{{back_exchange}}</h4><h4 ng-if="back_exchange < 0" style="color:red">- £{{tofix2(back_exchange * (-1))}}</h4><h4 ng-if="back_exchange == 0" style="color:black">£0.00</h4></div>
+                    <div style="display: inline-block; width: 100px" align="center"><h4 ng-if="back_total > 0" style="color:#28A745">= £{{back_total}}</h4><h4 ng-if="back_total <= 0">= £{{back_total}}</h4></div>
+                </div>
+
+
+
+            </div>
+            <div  style="background: #E9ECEF; height: 40px; margin-bottom: 15px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px">
+                <div style="width: 300px; height: 100%; background-image: url('./img/red.png'); display: inline-block; padding-right: 30px; border-bottom-left-radius: 4px">
+                    <h4 class="text-right white">If lay (exchange) bet wins</h4>
+                </div>
+
+                <div style="width: 380px; height: 100%; display: inline-block; background: transparent" class="pull-right">
+                    <div style="display: inline-block; width: 130px" align="center"><h4 ng-if="lay_bookie > 0" style="color:#28A745">+ £{{lay_bookie}}</h4><h4 ng-if="lay_bookie < 0" style="color:red">- £{{tofix2(lay_bookie * (-1))}}</h4><h4 ng-if="lay_bookie == 0" style="color:black">£0.00</h4></div>
+                    <div style="display: inline-block; width: 130px" align="center"><h4 ng-if="lay_exchange > 0" style="color:#28A745">+ £{{lay_exchange}}</h4><h4 ng-if="lay_exchange < 0" style="color:red">- £{{tofix2(lay_exchange * (-1))}}</h4><h4 ng-if="lay_exchange == 0" style="color:black">£0.00</h4></div>
+                    <div style="display: inline-block; width: 100px" align="center"><h4 ng-if="lay_total > 0" style="color:#28A745">= £{{lay_total}}</h4><h4 ng-if="lay_total <= 0">= £{{lay_total}}</h4></div>
+
+
+                </div>
+            </div>
+
+
+            <div  style="background: #E9ECEF; height: 50px; text-align: center;; border-radius: 4px" align="center">
+                <h3 ng-if="back_total > 0" style="padding-top: 10px">Total profit:<span style="color: #28A745; display: inline" > + £{{back_total}}</span></h3>
+                <h3 ng-if="back_total == 0" style="padding-top: 10px">Total profit:<span style="color: black; display: inline" > £0.00</span></h3>
+                <h3 ng-if="back_total < 0" style="padding-top: 10px">Total profit:<span style="color: red; display: inline"> - £{{tofix2(back_total * (-1))}}</span></h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+<script src="./global/vendor/jquery/jquery.js"></script>
+<script src="./global/vendor/bootstrap/bootstrap.js"></script>
+<script src="./global/vendor/animsition/animsition.js"></script>
+<script src="./global/vendor/asscroll/jquery-asScroll.js"></script>
+<script src="./global/vendor/mousewheel/jquery.mousewheel.js"></script>
+<script src="./global/vendor/asscrollable/jquery.asScrollable.all.js"></script>
+<script src="./global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+<script src="./global/vendor/waves/waves.js"></script>
+<!-- Plugins -->
+<script src="./global/vendor/switchery/switchery.min.js"></script>
+<script src="./global/vendor/intro-js/intro.js"></script>
+<script src="./global/vendor/screenfull/screenfull.js"></script>
+<script src="./global/vendor/slidepanel/jquery-slidePanel.js"></script>
+<script src="./global/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+<!-- Scripts -->
+<script src="./global/js/core.js"></script>
+<script src="./assets/js/site.js"></script>
+<script src="./assets/js/sections/menu.js"></script>
+<script src="./assets/js/sections/menubar.js"></script>
+<script src="./assets/js/sections/sidebar.js"></script>
+<script src="./global/js/configs/config-colors.js"></script>
+<script src="./assets/js/configs/config-tour.js"></script>
+<script src="./global/js/components/asscrollable.js"></script>
+<script src="./global/js/components/animsition.js"></script>
+<script src="./global/js/components/slidepanel.js"></script>
+<script src="./global/js/components/switchery.js"></script>
+<script src="./global/js/components/tabs.js"></script>
+<script src="./global/js/components/jquery-placeholder.js"></script>
+<script src="./global/js/components/material.js"></script>
+
+<script src="./angular/custom1.js"></script>
+
+
+
+<script>
+    (function(document, window, $) {
+        'use strict';
+        var Site = window.Site;
+        $(document).ready(function() {
+            Site.run();
+        });
+    })(document, window, jQuery);
+</script>
+</html>

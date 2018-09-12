@@ -1,0 +1,111 @@
+[05-May-2018 15:24:43 Europe/London] PHP Warning:  DOMDocument::load(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/xiaolu/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[05-May-2018 15:24:43 Europe/London] PHP Warning:  DOMDocument::load(http://www.thestar.com/feeds.topstories.rss): failed to open stream: no suitable wrapper could be found in /home/xiaolu/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[05-May-2018 15:24:43 Europe/London] PHP Warning:  DOMDocument::load(): I/O warning : failed to load external entity &quot;http://www.thestar.com/feeds.topstories.rss&quot; in /home/xiaolu/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[07-May-2018 11:02:41 Europe/London] PHP Warning:  DOMDocument::load(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/xiaolu/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[07-May-2018 11:02:41 Europe/London] PHP Warning:  DOMDocument::load(http://www.thestar.com/feeds.topstories.rss): failed to open stream: no suitable wrapper could be found in /home/xiaolu/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[07-May-2018 11:02:41 Europe/London] PHP Warning:  DOMDocument::load(): I/O warning : failed to load external entity &quot;http://www.thestar.com/feeds.topstories.rss&quot; in /home/xiaolu/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[07-May-2018 11:02:56 Europe/London] PHP Fatal error:  Class 'Blog' not found in /home/xiaolu/public_html/view/front/modules_/timeline/controller.php on line 33
+[07-May-2018 11:04:49 Europe/London] PHP Fatal error:  Class 'Portfolio' not found in /home/xiaolu/public_html/view/front/modules_/timeline/controller.php on line 134
+[10-May-2018 18:55:07 Europe/London] PHP Fatal error:  Class 'Portfolio' not found in /home/xiaolu/public_html/view/front/modules_/timeline/controller.php on line 134
+[10-May-2018 19:24:53 Europe/London] PHP Fatal error:  Class 'Portfolio' not found in /home/xiaolu/public_html/view/front/modules_/timeline/controller.php on line 134
+[23-May-2018 15:59:36 Europe/London] PHP Warning:  DOMDocument::load(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/oddsy/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[23-May-2018 15:59:36 Europe/London] PHP Warning:  DOMDocument::load(http://www.thestar.com/feeds.topstories.rss): failed to open stream: no suitable wrapper could be found in /home/oddsy/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[23-May-2018 15:59:36 Europe/London] PHP Warning:  DOMDocument::load(): I/O warning : failed to load external entity &quot;http://www.thestar.com/feeds.topstories.rss&quot; in /home/oddsy/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[23-May-2018 16:01:57 Europe/London] PHP Fatal error:  Class 'Blog' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 33
+[23-May-2018 16:03:43 Europe/London] PHP Fatal error:  Class 'Portfolio' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 134
+[23-May-2018 17:51:32 Europe/London] PHP Warning:  DOMDocument::load(): Start tag expected, '&lt;' not found in /home/oddsy/public_html/view/front/plugins_/rss/cache/326ef08f0f32889967f3bbaa91856d2f, line: 2 in /home/oddsy/public_html/view/admin/plugins_/rss/Rss.class.php on line 194
+[23-May-2018 17:51:41 Europe/London] PHP Fatal error:  Class 'Blog' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 33
+[23-May-2018 17:52:16 Europe/London] PHP Fatal error:  Class 'Portfolio' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 134
+[23-May-2018 17:52:26 Europe/London] PHP Fatal error:  Class 'Portfolio' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 134
+[23-May-2018 19:52:50 Europe/London] PHP Warning:  DOMDocument::load(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/oddsy/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[23-May-2018 19:52:50 Europe/London] PHP Warning:  DOMDocument::load(http://www.thestar.com/feeds.topstories.rss): failed to open stream: no suitable wrapper could be found in /home/oddsy/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[23-May-2018 19:52:50 Europe/London] PHP Warning:  DOMDocument::load(): I/O warning : failed to load external entity &quot;http://www.thestar.com/feeds.topstories.rss&quot; in /home/oddsy/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[23-May-2018 19:56:14 Europe/London] PHP Fatal error:  Class 'Blog' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 33
+[23-May-2018 19:57:11 Europe/London] PHP Fatal error:  Class 'Portfolio' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 134
+[26-May-2018 15:13:09 Europe/London] PHP Fatal error:  Class 'Blog' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 33
+[26-May-2018 15:13:19 Europe/London] PHP Warning:  DOMDocument::load(): http:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/oddsy/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[26-May-2018 15:13:19 Europe/London] PHP Warning:  DOMDocument::load(http://www.thestar.com/feeds.topstories.rss): failed to open stream: no suitable wrapper could be found in /home/oddsy/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[26-May-2018 15:13:19 Europe/London] PHP Warning:  DOMDocument::load(): I/O warning : failed to load external entity &quot;http://www.thestar.com/feeds.topstories.rss&quot; in /home/oddsy/public_html/view/admin/plugins_/rss/Rss.class.php on line 196
+[26-May-2018 15:13:21 Europe/London] PHP Fatal error:  Class 'Blog' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 33
+[26-May-2018 15:13:33 Europe/London] PHP Fatal error:  Class 'Blog' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 33
+[26-May-2018 15:13:44 Europe/London] PHP Fatal error:  Class 'Portfolio' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 134
+[26-May-2018 15:14:00 Europe/London] PHP Warning:  DOMDocument::load(): Start tag expected, '&lt;' not found in /home/oddsy/public_html/view/front/plugins_/rss/cache/326ef08f0f32889967f3bbaa91856d2f, line: 2 in /home/oddsy/public_html/view/admin/plugins_/rss/Rss.class.php on line 194
+[26-May-2018 15:14:20 Europe/London] PHP Fatal error:  Class 'Blog' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 33
+[26-May-2018 15:14:30 Europe/London] PHP Fatal error:  Class 'Blog' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 33
+[26-May-2018 15:14:41 Europe/London] PHP Fatal error:  Class 'Portfolio' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 134
+[26-May-2018 15:17:25 Europe/London] PHP Warning:  DOMDocument::load(): Start tag expected, '&lt;' not found in /home/oddsy/public_html/view/front/plugins_/rss/cache/326ef08f0f32889967f3bbaa91856d2f, line: 2 in /home/oddsy/public_html/view/admin/plugins_/rss/Rss.class.php on line 194
+[26-May-2018 15:17:28 Europe/London] PHP Warning:  DOMDocument::load(): Start tag expected, '&lt;' not found in /home/oddsy/public_html/view/front/plugins_/rss/cache/326ef08f0f32889967f3bbaa91856d2f, line: 2 in /home/oddsy/public_html/view/admin/plugins_/rss/Rss.class.php on line 194
+[26-May-2018 15:18:12 Europe/London] PHP Fatal error:  Class 'Portfolio' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 134
+[26-May-2018 15:18:23 Europe/London] PHP Fatal error:  Class 'Portfolio' not found in /home/oddsy/public_html/view/front/modules_/timeline/controller.php on line 134
+[25-Jul-2018 19:43:01 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Blog' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 33
+[25-Jul-2018 19:44:47 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Blog' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 33
+[27-Jul-2018 12:21:03 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Portfolio' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 134
+[31-Jul-2018 13:12:01 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Blog' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 33
+[31-Jul-2018 13:48:44 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Portfolio' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 134
+[31-Jul-2018 14:40:34 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Blog' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 33
+[31-Jul-2018 15:02:00 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Portfolio' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 134
+[03-Aug-2018 20:01:33 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Blog' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 33
+[03-Aug-2018 22:35:22 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Portfolio' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 134
+[04-Aug-2018 05:06:21 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Portfolio' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 134
+[07-Aug-2018 15:48:17 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Blog' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 33
+[07-Aug-2018 16:52:20 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Blog' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 33
+[07-Aug-2018 18:50:22 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Portfolio' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 134
+[07-Aug-2018 20:52:17 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Blog' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 33
+[08-Aug-2018 01:02:32 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Blog' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 33
+[14-Aug-2018 18:46:27 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Blog' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 33
+[02-Sep-2018 20:47:19 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Blog' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 33
+[05-Sep-2018 01:06:45 Europe/London] PHP Fatal error:  Uncaught Error: Class 'Blog' not found in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/fzsgjlbk/public_html/view/front/modules_/timeline/controller.php on line 33
