@@ -172,7 +172,7 @@
 
   /* front end routes */
   //home
-  $router->match('GET|POST', '/', 'FrontController@Index');
+  $router->match('GET|POST', '/', 'FrontController@Dashboard');
 
   //pages
   $router->match('GET|POST', '/' . $core->pageslug . '/([a-z0-9_-]+)', 'FrontController@Page');

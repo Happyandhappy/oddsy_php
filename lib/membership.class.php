@@ -144,6 +144,36 @@
 		  }
 	  }
 	  
+
+	  /**
+	   *  Membership:PaymentHistory
+	   * 
+	   * @param mixed $id
+	   * @return
+	   */
+	  public function PaymentHistory($id){
+	        
+		$price = array();
+		
+		$sql = "
+			SELECT 
+			membership_id,
+			rate_amount,
+			tax,
+			coupon,
+			total,
+			currency,
+			created				
+			FROM
+			`" . self::pTable . "` where `user_id`='$id'";
+		$data = Db::run()->pdoQuery($sql)->results();
+		$data = json_decode(json_encode($data), True);
+		for ($i = 0 ; $i < count($data) ;  $i++){
+			$data[$i]['price'] = self::getMembership($data[$i]['membership_id']);
+		}
+		return $data;
+  	}
+  
       /**
        * Membership::processMembership()
        * 
@@ -218,6 +248,19 @@
 	
 		  $row = Db::run()->select(self::mTable, array("id","title" . Lang::$lang))->results();
 		  return ($row) ? $row : 0;
+	  }
+
+	  /**
+       * Membership::getMembership($id)
+	   * 
+       * @param $id
+       * @return
+       */
+	  public function getMembership($id)
+	  {	
+		  $sql = "select price from `" . self::mTable . "` where id=" . $id;
+		  $row = Db::run()->pdoQuery($sql)->results();		  
+		  return ($row) ? $row[0]->price : 0;
 	  }
 
       /**

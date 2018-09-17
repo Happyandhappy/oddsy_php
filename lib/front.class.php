@@ -508,10 +508,10 @@
        */
       public function Dashboard()
       {
-		  if (!App::Auth()->is_User()) {
-			  Url::redirect(SITEURL); 
-			  exit; 
-		  }
+		//   if (!App::Auth()->is_User()) {
+		// 	  Url::redirect(SITEURL); 
+		// 	  exit; 
+		//   }
 		  
 		  $core = App::Core();
           $tpl = App::View(BASEPATH . 'view/');

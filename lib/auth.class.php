@@ -14,7 +14,7 @@
 
   class Auth
   {
-
+      
       public $logged_in = false;
       public $uid = 0;
       public $username;
@@ -80,10 +80,10 @@
               $this->userlevel = $session->get('userlevel');
 		      $this->acl = $session->get('acl');
 			  $this->modaccess = $session->get('modaccess');
-			  $this->plugaccess = $session->get('plugaccess');
+              $this->plugaccess = $session->get('plugaccess');
+              $this->paymentHistory = App::Membership()->PaymentHistory($this->uid);
 			  self::$userdata = $session->get('userdata');
-			  self::$udata = $this;
-			  
+			  self::$udata = $this;			  
               return true;
           } else {
               return false;
@@ -328,7 +328,7 @@
 
           return ($row) ? $row : 0;
       }
-	  
+      
       /**
        * Auth::getAcl() 
        * 

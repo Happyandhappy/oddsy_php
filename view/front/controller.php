@@ -94,15 +94,15 @@
 
       /* == Select Membership == */
       case "buyMembership":
-	      if(!App::Auth()->is_User())
-			  exit;
+	    //   if(!App::Auth()->is_User())
+		// 	  exit;
           App::Membership()->buyMembership();
       break;
 
       /* == Select Gateway == */
       case "selectGateway":
-	      if(!App::Auth()->is_User())
-			  exit;
+	    //   if(!App::Auth()->is_User())
+		// 	  exit;
           App::Membership()->selectGateway();
       break;
 	  
