@@ -12,6 +12,7 @@
   
   Bootstrap::Autoloader(array(APLUGPATH . 'slider/'));
 ?>
+
 <?php if($conf = App::Slider()->Render($data['plugin_id'])) :?>
 <!-- Start Slider -->
 <?php $data = App::Slider()->getSlides($conf->id);?>

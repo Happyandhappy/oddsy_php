@@ -24,7 +24,7 @@
       public function Run($days)
       {
 		  $data = self::expireMemberships($days);
-          self::runStripe($days);
+        //   self::runStripe($days);
 		  self::sendEmails($data);
       }
 
@@ -64,7 +64,6 @@
 				  WHERE id IN (" . $idlist . ")";
               Db::run()->pdoQuery($query);
           }
-
       }
 
       /**
@@ -127,8 +126,7 @@
       {
           $sql = "
 			  SELECT 
-				um.*,
-				m.title,
+				um.*,				
 				u.id as uid,
 				m.price,
 				u.email,

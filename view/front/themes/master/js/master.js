@@ -543,4 +543,7 @@
 
         });
     };
+
+    $('.progresbar').animate({width:'100%',},3500);
+    $('.progresbar').animate({height:'0px',},'fast');
 })(jQuery);

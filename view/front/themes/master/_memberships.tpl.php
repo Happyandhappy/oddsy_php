@@ -108,13 +108,13 @@
             <?php echo Date::getPeriodReadable($row->period);?>
           </p>
           <p class="wojo tiny text"><?php echo $row->{'description' . Lang::$lang};?></p>
-          <?php if(Auth::$udata->membership_id != $row->id):?>
+          <?php //if(Auth::$udata->membership_id != $row->id):?>
           <p class="half-top-padding">
-            <a class="wojo fluid button add-membership" data-id="<?php echo $row->id;?>" style="<?php echo ($grade + 4 < $row->id) ?'pointer-events: none;color: darkgrey;': '';?>">
+            <a class="wojo fluid button add-membership" data-id="<?php echo $row->id;?>" style="<?php echo ($grade + 4 < $row->id) || Auth::$udata->membership_id != 0 ?'pointer-events: none;color: darkgrey;': '';?>">
               <?php echo ($row->price <> 0) ? Lang::$word->SELECT : Lang::$word->ACTIVATE;?>  
             </a>
           </p>
-          <?php endif;?>
+          <?php// endif;?>
         </div>
       </div>
       <?php endforeach;?>

@@ -65,6 +65,7 @@
 </div>
 <?php endif;?>
 <header>
+  <div class="progresbar" style="display: block; width: 0px; height:4px;position: absolute;"></div>
   <div id="topbar">
     <div class="wojo-grid">
       <div class="row half-horizontal-gutters align-middle"> 

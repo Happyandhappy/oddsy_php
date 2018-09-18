@@ -18,4 +18,5 @@
 .wojo.active.progress .bar::after{
     background:transparent;
 }
+.progresbar{background:gray;}
 
