@@ -150,7 +150,8 @@
       {
 		  $core = App::Core();
           if ($core->logo) {
-              $logo = '<img src="' . UPLOADURL . '/' . $core->logo . '" alt="' . $core->company . '" style="border:0"/>';
+            $logo = '<div style="background: #ffb80c;">
+            <img src="' . UPLOADURL . '/' . $core->logo . '" alt="' . $core->company . '" style="border:0; max-width:20%;max-height:100%;vertical-align:middle;"/></div>';
           } else {
               $logo = $core->company;
           }
